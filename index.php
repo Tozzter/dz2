@@ -10,24 +10,24 @@
    
    
    
-   define('CITY','Город','Тюмень');
+   define('CITY','Город Тюмень');
    
-   echo '<br>Город '.'Тюмень';
+   defined('CITY','Город Тюмень');
    
-   define('CITY','Город','Тюмень123');
+   echo '<br>', CITY, '<br>';
    
    // задание готово
    
    
-   $book=array('title', 'author', 'pages');
-   $massive['title']='Ведьмак';
-   $massive['author']='Анджей Сапковский';
-   $massive['pages']='1344';
+   $book=array();
+   $book['title']="Ведьмак";
+   $book['author']="Анджей Сапковский";
+   $book['pages']="1344";
            
-   print_r ('Недавно я прочитал книгу '.$massive['title']); 
-   print_r (', написанную автором '.$massive['author']);
-   print_r (', я осилил все '.$massive['pages']);
-   print_r (' страниц, мне она очень понравилась ');
+   echo ('Недавно я прочитал книгу '.$book['title']); 
+   echo (', написанную автором '.$book['author']);
+   echo (', я осилил все '.$book['pages']);
+   echo (' страниц, мне она очень понравилась ');
    
    // задание готово
    
@@ -38,7 +38,7 @@
            
    $books=array($book1, $book2); 
    
-   echo('Недавно я прочитал книги '.$books[0]['title'].' и '.$books[1]['title']." , "
+   echo('<br> Недавно я прочитал книги '.$books[0]['title'].' и '.$books[1]['title']." , "
    . " написанные соответственно авторами ".$books[0]['author']." и ".$books[1]['author'].",
    я осилил в сумме ".($books[0]['pages'] + $books[1]['pages'])." страниц, не ожидал от себя подобного");
    
