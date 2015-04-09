@@ -10,11 +10,12 @@
    
    
    
-  define('CITY', 'Город Тюмень');
+   define('CITY', 'Город Тюмень');
    
    if (defined('CITY')){
       
-   echo '<br>', CITY, '<br>';}
+   echo '<br>', CITY, '<br>';
+   echo '<br>', city, '<br>';}
    
    // задание готово
    
